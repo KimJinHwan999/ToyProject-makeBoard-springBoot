@@ -1,0 +1,13 @@
+package com.example.board.dto;
+
+import java.security.PrivateKey;
+
+import lombok.Data;
+
+@Data
+public class RSA {
+
+	private PrivateKey privateKey;
+    private String modulus;
+    private String exponent;
+}

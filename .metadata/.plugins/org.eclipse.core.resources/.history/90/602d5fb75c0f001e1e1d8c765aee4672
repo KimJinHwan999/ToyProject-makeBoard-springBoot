@@ -1,0 +1,19 @@
+package com.example.board.dto;
+
+import java.sql.Date;
+
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+public class BoardDTO {
+	
+	// 1 : 유머 2 : 스포츠 3 : 게임
+	private int board_num;
+	private String post_name;
+	private String member_id;
+	private Date post_date;
+	
+	
+}

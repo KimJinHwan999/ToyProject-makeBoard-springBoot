@@ -1,0 +1,36 @@
+$(document).on(function(){
+	
+	$("#deleteButton").on("click", function(e){
+		e.preventDefault();
+		$("#Modal").modal("show");
+		
+	});
+	
+	
+let emailKey = "";
+	
+	$("#replyAjaxButton").click(function(){
+    
+    	let reply_id = $("#reply_id").val();
+	    let reply_content = $("#reply_content").val();
+	    let replyUrl = $("#replyAjaxPath").val();
+	    
+	     
+	    $.ajax({
+	        type:'post', 
+	        url: replyUrl, 
+	        data: {"reply_content" : reply_content}, 
+	        success: function(data){ 
+	            if(data != null){ // 만약 성공할시
+	            	alert('댓글작성완료');
+	            	emailKey = data;
+	             
+	         	}else{ // 만약 실패할시
+	             	alert('댓글작성실패');
+				}
+	     	},
+	        	error : function(error){alert(error);}
+	    });
+        
+	});
+})

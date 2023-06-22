@@ -1,0 +1,14 @@
+/**
+ * 
+ */
+$(document).ready(function(){
+	
+	/*========== 추가 이미지 썸네일 ==========*/	
+	$("#testbutton").on("click", function(e){
+		e.preventDefault();
+		$("#testModal").modal("show");
+		
+	});
+	
+	
+})

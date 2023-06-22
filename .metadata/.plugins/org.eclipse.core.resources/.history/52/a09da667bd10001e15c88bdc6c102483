@@ -1,0 +1,13 @@
+/**
+ * 
+ */
+$(document).ready(function(){
+	
+	/*========== 추가 이미지 썸네일 ==========*/	
+	$("#deletePost").on("click", function(e){
+		
+		
+	});
+	
+	
+})

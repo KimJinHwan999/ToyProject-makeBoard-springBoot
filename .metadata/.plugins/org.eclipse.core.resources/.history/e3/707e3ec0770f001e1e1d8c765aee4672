@@ -1,0 +1,41 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+	<h2 class="sub-header">인덱스페이지</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th>글번호</th>
+                <th>글제목</th>
+                <th>글쓴이</th>
+                <th>작성일자</th>
+                <th>조회수</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1,001</td>
+                <td>Lorem</td>
+                <td>ipsum</td>
+                <td>dolor</td>
+                <td>sit</td>
+            </tr>
+            <tr>
+                <td>1,014</td>
+                <td>per</td>
+                <td>inceptos</td>
+                <td>himenaeos</td>
+                <td>Curabitur</td>
+            </tr>
+            <tr>
+                <td>1,015</td>
+                <td>sodales</td>
+                <td>ligula</td>
+                <td>in</td>
+                <td>libero</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+	
+</div>

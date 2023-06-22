@@ -1,0 +1,20 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jstl/core_rt"%>
+    
+<div class="modal modal-sheet position-static d-block bg-body-secondary p-4 py-md-5" tabindex="-1" role="dialog" id="modalSheet">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content rounded-4 shadow">
+      <div class="modal-header border-bottom-0">
+        <h1 class="modal-title fs-5" _msttexthash="21317686" _msthash="6">모달 제목</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="닫다" _mstaria-label="59709" _msthash="7"></button>
+      </div>
+      <div class="modal-body py-0">
+        <p _msttexthash="822337152" _msthash="8">이것은 iOS의 최신 공유 시트와 같이 뷰포트의 맨 아래에 자신을 문서화하는 모달의 변형인 모달 시트입니다.</p>
+      </div>
+      <div class="modal-footer flex-column align-items-stretch w-100 gap-2 pb-3 border-top-0">
+        <button type="button" class="btn btn-lg btn-primary" _msttexthash="36194730" _msthash="9">변경 내용 저장</button>
+        <button type="button" class="btn btn-lg btn-secondary" data-bs-dismiss="modal" _msttexthash="8930857" _msthash="10">닫다</button>
+      </div>
+    </div>
+  </div>
+</div>

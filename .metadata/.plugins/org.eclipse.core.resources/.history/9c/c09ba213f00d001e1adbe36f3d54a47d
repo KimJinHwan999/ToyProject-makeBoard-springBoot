@@ -1,0 +1,22 @@
+package com.example.board.dto;
+
+import java.security.PrivateKey;
+
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
+
+@Getter
+@Setter
+public class RSA {
+
+	private PrivateKey privateKey;
+    private String modulus;
+    private String exponent;
+    
+    public RSA(PrivateKey privateKey2, String modulus2, String exponent2) {
+    	this.privateKey = privateKey;
+        this.modulus = modulus;
+        this.exponent = exponent;
+    }
+}

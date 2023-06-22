@@ -1,0 +1,15 @@
+package com.example.board.mapper;
+
+import java.util.List;
+
+import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
+import org.apache.tiles.autotag.core.runtime.annotation.Parameter;
+
+@Mapper
+public interface PhotoMapper {
+	
+	/* 글 PK로 사진 이름 찾아오기 */
+	public List<String> findPhotoByNo(@Param("post_id") Long post_id);
+
+}

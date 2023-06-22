@@ -1,0 +1,5 @@
+package com.example.board.interceptor;
+
+public class AuthInterceptor {
+
+}

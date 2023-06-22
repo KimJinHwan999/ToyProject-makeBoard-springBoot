@@ -1,0 +1,43 @@
+$(document).on(function(){
+	
+	$("#deleteButton").on("click", function(e){
+		e.preventDefault();
+		$("#Modal").modal("show");
+		
+	});
+	
+	
+let emailKey = "";
+	
+	$("#replyAjaxButton").click(function(){
+    
+    	let post_id = $("#post_id").val();
+    	let member_no = $("#member_no").val();
+    	let member_id = $("#member_id").val();
+	    let reply_content = $("#reply_content").val();
+	    let replyUrl = $("#replyAjaxPath").val();
+	    
+	     
+	    $.ajax({
+	        type:'post', 
+	        url: replyUrl, 
+	        data: {
+				"post_id" : post_id,
+				"member_no" : member_no,
+				"member_id" : member_id,
+				"reply_content" : reply_content
+				}, 
+	        success: function(data){ 
+	            if(data != null){ // 만약 성공할시
+	            	alert('댓글작성완료');
+	            	emailKey = data;
+	             
+	         	}else{ // 만약 실패할시
+	             	alert('댓글작성실패');
+				}
+	     	},
+	        	error : function(error){alert(error);}
+	    });
+        
+	});
+})
